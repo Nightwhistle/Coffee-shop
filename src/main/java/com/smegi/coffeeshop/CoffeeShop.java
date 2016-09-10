@@ -33,7 +33,7 @@ public class CoffeeShop extends javax.swing.JFrame {
     private void initComponents() {
 
         panel_main = new javax.swing.JPanel();
-        panel_login = new javax.swing.JPanel();
+        javax.swing.JPanel panel_login = new JPanelBackground("/background.jpg");
         login_loginWithLabel = new javax.swing.JLabel();
         panel_login_container = new javax.swing.JPanel();
         login_usernameField = new javax.swing.JTextField();
@@ -50,8 +50,38 @@ public class CoffeeShop extends javax.swing.JFrame {
         register_registerButton = new javax.swing.JButton();
         register_backToLoginButton = new javax.swing.JButton();
         panel_coffeeList = new javax.swing.JPanel();
-        coffeelist_place = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        panel_coffeelist_left = new javax.swing.JPanel();
+        coffeelist_coffeelisLabel = new javax.swing.JLabel();
+        panel_coffeelist_center = new javax.swing.JPanel();
+        CoffeePlaceholder = new javax.swing.JLabel();
+        CoffeePlaceholder1 = new javax.swing.JLabel();
+        CoffeePlaceholder2 = new javax.swing.JLabel();
+        CoffeePlaceholder3 = new javax.swing.JLabel();
+        CoffeePlaceholder4 = new javax.swing.JLabel();
+        CoffeePlaceholder5 = new javax.swing.JLabel();
+        CoffeePlaceholder6 = new javax.swing.JLabel();
+        CoffeePlaceholder7 = new javax.swing.JLabel();
+        CoffeePlaceholder8 = new javax.swing.JLabel();
+        CoffeePlaceholder9 = new javax.swing.JLabel();
+        CoffeePlaceholder10 = new javax.swing.JLabel();
+        CoffeePlaceholder11 = new javax.swing.JLabel();
+        CoffeePlaceholder12 = new javax.swing.JLabel();
+        CoffeePlaceholder13 = new javax.swing.JLabel();
+        CoffeePlaceholder14 = new javax.swing.JLabel();
+        CoffeePlaceholder15 = new javax.swing.JLabel();
+        CoffeePlaceholder16 = new javax.swing.JLabel();
+        CoffeePlaceholder17 = new javax.swing.JLabel();
+        CoffeePlaceholder18 = new javax.swing.JLabel();
+        CoffeePlaceholder19 = new javax.swing.JLabel();
+        CoffeePlaceholder20 = new javax.swing.JLabel();
+        CoffeePlaceholder21 = new javax.swing.JLabel();
+        CoffeePlaceholder22 = new javax.swing.JLabel();
+        CoffeePlaceholder23 = new javax.swing.JLabel();
+        CoffeePlaceholder24 = new javax.swing.JLabel();
+        CoffeePlaceholder25 = new javax.swing.JLabel();
+        CoffeePlaceholder26 = new javax.swing.JLabel();
+        CoffeePlaceholder27 = new javax.swing.JLabel();
         panel_orderReview = new javax.swing.JPanel();
         panel_rate = new javax.swing.JPanel();
 
@@ -71,25 +101,28 @@ public class CoffeeShop extends javax.swing.JFrame {
         login_loginWithLabel.setText("login with");
         panel_login.add(login_loginWithLabel, java.awt.BorderLayout.CENTER);
 
+        panel_login_container.setOpaque(false);
         panel_login_container.setLayout(new java.awt.GridLayout(4, 0, 0, 5));
 
-        login_usernameField.setBackground(new java.awt.Color(240, 240, 240));
+        login_usernameField.setBackground(new Color(0,0,0,0));
         login_usernameField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         login_usernameField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         login_usernameField.setText("Username");
         login_usernameField.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
         login_usernameField.setMargin(new java.awt.Insets(0, 20, 0, 20));
         login_usernameField.setMinimumSize(new java.awt.Dimension(40, 24));
+        login_usernameField.setOpaque(false);
         login_usernameField.setPreferredSize(new java.awt.Dimension(88, 40));
         panel_login_container.add(login_usernameField);
 
-        login_passwordField.setBackground(new java.awt.Color(240, 240, 240));
+        login_passwordField.setBackground(new Color(0,0,0,0));
         login_passwordField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         login_passwordField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         login_passwordField.setText("Password");
         login_passwordField.setToolTipText("");
         login_passwordField.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
         login_passwordField.setMargin(new java.awt.Insets(0, 20, 0, 20));
+        login_passwordField.setOpaque(false);
         panel_login_container.add(login_passwordField);
 
         login_loginButton.setBackground(new java.awt.Color(255, 255, 255));
@@ -109,6 +142,7 @@ public class CoffeeShop extends javax.swing.JFrame {
     });
     panel_login_container.add(login_loginButton);
 
+    panel_login_container_register.setOpaque(false);
     panel_login_container_register.setLayout(new java.awt.GridLayout(1, 0, 100, 0));
 
     login_createAccountButton.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -193,9 +227,7 @@ register_backToLoginButton.addActionListener(new java.awt.event.ActionListener()
 
     panel_main.add(panel_register, "card_register");
 
-    coffeelist_place.setFont(new java.awt.Font("Tahoma", 0, 48)); // NOI18N
-    coffeelist_place.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-    coffeelist_place.setText("COFFEE LIST");
+    panel_coffeeList.setLayout(new java.awt.BorderLayout());
 
     jButton1.setText("< login");
     jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -203,29 +235,116 @@ register_backToLoginButton.addActionListener(new java.awt.event.ActionListener()
             jButton1ActionPerformed(evt);
         }
     });
+    panel_coffeeList.add(jButton1, java.awt.BorderLayout.NORTH);
 
-    javax.swing.GroupLayout panel_coffeeListLayout = new javax.swing.GroupLayout(panel_coffeeList);
-    panel_coffeeList.setLayout(panel_coffeeListLayout);
-    panel_coffeeListLayout.setHorizontalGroup(
-        panel_coffeeListLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-        .addGroup(panel_coffeeListLayout.createSequentialGroup()
-            .addGap(32, 32, 32)
-            .addComponent(coffeelist_place, javax.swing.GroupLayout.PREFERRED_SIZE, 406, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addContainerGap(42, Short.MAX_VALUE))
-        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_coffeeListLayout.createSequentialGroup()
-            .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addGap(120, 120, 120))
+    coffeelist_coffeelisLabel.setText("Coffee List");
+
+    javax.swing.GroupLayout panel_coffeelist_leftLayout = new javax.swing.GroupLayout(panel_coffeelist_left);
+    panel_coffeelist_left.setLayout(panel_coffeelist_leftLayout);
+    panel_coffeelist_leftLayout.setHorizontalGroup(
+        panel_coffeelist_leftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        .addGroup(panel_coffeelist_leftLayout.createSequentialGroup()
+            .addGap(0, 0, Short.MAX_VALUE)
+            .addComponent(coffeelist_coffeelisLabel)
+            .addGap(0, 0, Short.MAX_VALUE))
     );
-    panel_coffeeListLayout.setVerticalGroup(
-        panel_coffeeListLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_coffeeListLayout.createSequentialGroup()
-            .addGap(184, 184, 184)
-            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 184, Short.MAX_VALUE)
-            .addComponent(coffeelist_place, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addGap(249, 249, 249))
+    panel_coffeelist_leftLayout.setVerticalGroup(
+        panel_coffeelist_leftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        .addGroup(panel_coffeelist_leftLayout.createSequentialGroup()
+            .addGap(0, 0, Short.MAX_VALUE)
+            .addComponent(coffeelist_coffeelisLabel)
+            .addGap(0, 0, Short.MAX_VALUE))
     );
+
+    panel_coffeeList.add(panel_coffeelist_left, java.awt.BorderLayout.WEST);
+
+    panel_coffeelist_center.setLayout(new java.awt.GridLayout(7, 4, 5, 5));
+
+    CoffeePlaceholder.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
+    panel_coffeelist_center.add(CoffeePlaceholder);
+
+    CoffeePlaceholder1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
+    panel_coffeelist_center.add(CoffeePlaceholder1);
+
+    CoffeePlaceholder2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
+    panel_coffeelist_center.add(CoffeePlaceholder2);
+
+    CoffeePlaceholder3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
+    panel_coffeelist_center.add(CoffeePlaceholder3);
+
+    CoffeePlaceholder4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
+    panel_coffeelist_center.add(CoffeePlaceholder4);
+
+    CoffeePlaceholder5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
+    panel_coffeelist_center.add(CoffeePlaceholder5);
+
+    CoffeePlaceholder6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
+    panel_coffeelist_center.add(CoffeePlaceholder6);
+
+    CoffeePlaceholder7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
+    panel_coffeelist_center.add(CoffeePlaceholder7);
+
+    CoffeePlaceholder8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
+    panel_coffeelist_center.add(CoffeePlaceholder8);
+
+    CoffeePlaceholder9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
+    panel_coffeelist_center.add(CoffeePlaceholder9);
+
+    CoffeePlaceholder10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
+    panel_coffeelist_center.add(CoffeePlaceholder10);
+
+    CoffeePlaceholder11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
+    panel_coffeelist_center.add(CoffeePlaceholder11);
+
+    CoffeePlaceholder12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
+    panel_coffeelist_center.add(CoffeePlaceholder12);
+
+    CoffeePlaceholder13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
+    panel_coffeelist_center.add(CoffeePlaceholder13);
+
+    CoffeePlaceholder14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
+    panel_coffeelist_center.add(CoffeePlaceholder14);
+
+    CoffeePlaceholder15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
+    panel_coffeelist_center.add(CoffeePlaceholder15);
+
+    CoffeePlaceholder16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
+    panel_coffeelist_center.add(CoffeePlaceholder16);
+
+    CoffeePlaceholder17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
+    panel_coffeelist_center.add(CoffeePlaceholder17);
+
+    CoffeePlaceholder18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
+    panel_coffeelist_center.add(CoffeePlaceholder18);
+
+    CoffeePlaceholder19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
+    panel_coffeelist_center.add(CoffeePlaceholder19);
+
+    CoffeePlaceholder20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
+    panel_coffeelist_center.add(CoffeePlaceholder20);
+
+    CoffeePlaceholder21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
+    panel_coffeelist_center.add(CoffeePlaceholder21);
+
+    CoffeePlaceholder22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
+    panel_coffeelist_center.add(CoffeePlaceholder22);
+
+    CoffeePlaceholder23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
+    panel_coffeelist_center.add(CoffeePlaceholder23);
+
+    CoffeePlaceholder24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
+    panel_coffeelist_center.add(CoffeePlaceholder24);
+
+    CoffeePlaceholder25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
+    panel_coffeelist_center.add(CoffeePlaceholder25);
+
+    CoffeePlaceholder26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
+    panel_coffeelist_center.add(CoffeePlaceholder26);
+
+    CoffeePlaceholder27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
+    panel_coffeelist_center.add(CoffeePlaceholder27);
+
+    panel_coffeeList.add(panel_coffeelist_center, java.awt.BorderLayout.CENTER);
 
     panel_main.add(panel_coffeeList, "card_coffeelist");
 
@@ -325,7 +444,35 @@ register_backToLoginButton.addActionListener(new java.awt.event.ActionListener()
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel coffeelist_place;
+    private javax.swing.JLabel CoffeePlaceholder;
+    private javax.swing.JLabel CoffeePlaceholder1;
+    private javax.swing.JLabel CoffeePlaceholder10;
+    private javax.swing.JLabel CoffeePlaceholder11;
+    private javax.swing.JLabel CoffeePlaceholder12;
+    private javax.swing.JLabel CoffeePlaceholder13;
+    private javax.swing.JLabel CoffeePlaceholder14;
+    private javax.swing.JLabel CoffeePlaceholder15;
+    private javax.swing.JLabel CoffeePlaceholder16;
+    private javax.swing.JLabel CoffeePlaceholder17;
+    private javax.swing.JLabel CoffeePlaceholder18;
+    private javax.swing.JLabel CoffeePlaceholder19;
+    private javax.swing.JLabel CoffeePlaceholder2;
+    private javax.swing.JLabel CoffeePlaceholder20;
+    private javax.swing.JLabel CoffeePlaceholder21;
+    private javax.swing.JLabel CoffeePlaceholder22;
+    private javax.swing.JLabel CoffeePlaceholder23;
+    private javax.swing.JLabel CoffeePlaceholder24;
+    private javax.swing.JLabel CoffeePlaceholder25;
+    private javax.swing.JLabel CoffeePlaceholder26;
+    private javax.swing.JLabel CoffeePlaceholder27;
+    private javax.swing.JLabel CoffeePlaceholder3;
+    private javax.swing.JLabel CoffeePlaceholder4;
+    private javax.swing.JLabel CoffeePlaceholder5;
+    private javax.swing.JLabel CoffeePlaceholder6;
+    private javax.swing.JLabel CoffeePlaceholder7;
+    private javax.swing.JLabel CoffeePlaceholder8;
+    private javax.swing.JLabel CoffeePlaceholder9;
+    private javax.swing.JLabel coffeelist_coffeelisLabel;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton login_createAccountButton;
     private javax.swing.JButton login_forgotPasswordButton;
@@ -334,7 +481,8 @@ register_backToLoginButton.addActionListener(new java.awt.event.ActionListener()
     private javax.swing.JTextField login_passwordField;
     private javax.swing.JTextField login_usernameField;
     private javax.swing.JPanel panel_coffeeList;
-    private javax.swing.JPanel panel_login;
+    private javax.swing.JPanel panel_coffeelist_center;
+    private javax.swing.JPanel panel_coffeelist_left;
     private javax.swing.JPanel panel_login_container;
     private javax.swing.JPanel panel_login_container_register;
     private javax.swing.JPanel panel_main;
