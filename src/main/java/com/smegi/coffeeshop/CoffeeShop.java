@@ -31,6 +31,7 @@ public class CoffeeShop extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+        java.awt.GridBagConstraints gridBagConstraints;
 
         panel_main = new javax.swing.JPanel();
         javax.swing.JPanel panel_login = new JPanelBackground("/background.jpg");
@@ -54,34 +55,11 @@ public class CoffeeShop extends javax.swing.JFrame {
         panel_coffeelist_left = new javax.swing.JPanel();
         coffeelist_coffeelisLabel = new javax.swing.JLabel();
         panel_coffeelist_center = new javax.swing.JPanel();
-        CoffeePlaceholder = new javax.swing.JLabel();
-        CoffeePlaceholder1 = new javax.swing.JLabel();
-        CoffeePlaceholder2 = new javax.swing.JLabel();
-        CoffeePlaceholder3 = new javax.swing.JLabel();
-        CoffeePlaceholder4 = new javax.swing.JLabel();
-        CoffeePlaceholder5 = new javax.swing.JLabel();
-        CoffeePlaceholder6 = new javax.swing.JLabel();
-        CoffeePlaceholder7 = new javax.swing.JLabel();
-        CoffeePlaceholder8 = new javax.swing.JLabel();
-        CoffeePlaceholder9 = new javax.swing.JLabel();
-        CoffeePlaceholder10 = new javax.swing.JLabel();
-        CoffeePlaceholder11 = new javax.swing.JLabel();
-        CoffeePlaceholder12 = new javax.swing.JLabel();
-        CoffeePlaceholder13 = new javax.swing.JLabel();
-        CoffeePlaceholder14 = new javax.swing.JLabel();
-        CoffeePlaceholder15 = new javax.swing.JLabel();
-        CoffeePlaceholder16 = new javax.swing.JLabel();
-        CoffeePlaceholder17 = new javax.swing.JLabel();
-        CoffeePlaceholder18 = new javax.swing.JLabel();
-        CoffeePlaceholder19 = new javax.swing.JLabel();
-        CoffeePlaceholder20 = new javax.swing.JLabel();
-        CoffeePlaceholder21 = new javax.swing.JLabel();
-        CoffeePlaceholder22 = new javax.swing.JLabel();
-        CoffeePlaceholder23 = new javax.swing.JLabel();
-        CoffeePlaceholder24 = new javax.swing.JLabel();
-        CoffeePlaceholder25 = new javax.swing.JLabel();
-        CoffeePlaceholder26 = new javax.swing.JLabel();
-        CoffeePlaceholder27 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
         panel_orderReview = new javax.swing.JPanel();
         panel_rate = new javax.swing.JPanel();
 
@@ -258,91 +236,27 @@ register_backToLoginButton.addActionListener(new java.awt.event.ActionListener()
 
     panel_coffeeList.add(panel_coffeelist_left, java.awt.BorderLayout.WEST);
 
-    panel_coffeelist_center.setLayout(new java.awt.GridLayout(7, 4, 5, 5));
+    panel_coffeelist_center.setLayout(new java.awt.GridLayout(7, 1, 5, 5));
 
-    CoffeePlaceholder.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
-    panel_coffeelist_center.add(CoffeePlaceholder);
+    jPanel1.setLayout(new java.awt.GridBagLayout());
 
-    CoffeePlaceholder1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
-    panel_coffeelist_center.add(CoffeePlaceholder1);
+    jButton2.setText("jButton2");
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    gridBagConstraints.weightx = 1.0;
+    gridBagConstraints.weighty = 1.0;
+    jPanel1.add(jButton2, gridBagConstraints);
 
-    CoffeePlaceholder2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
-    panel_coffeelist_center.add(CoffeePlaceholder2);
+    jButton3.setText("jButton2");
+    jPanel1.add(jButton3, new java.awt.GridBagConstraints());
 
-    CoffeePlaceholder3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
-    panel_coffeelist_center.add(CoffeePlaceholder3);
+    jButton4.setText("jButton2");
+    jPanel1.add(jButton4, new java.awt.GridBagConstraints());
 
-    CoffeePlaceholder4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
-    panel_coffeelist_center.add(CoffeePlaceholder4);
+    jButton5.setText("jButton2");
+    jPanel1.add(jButton5, new java.awt.GridBagConstraints());
 
-    CoffeePlaceholder5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
-    panel_coffeelist_center.add(CoffeePlaceholder5);
-
-    CoffeePlaceholder6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
-    panel_coffeelist_center.add(CoffeePlaceholder6);
-
-    CoffeePlaceholder7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
-    panel_coffeelist_center.add(CoffeePlaceholder7);
-
-    CoffeePlaceholder8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
-    panel_coffeelist_center.add(CoffeePlaceholder8);
-
-    CoffeePlaceholder9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
-    panel_coffeelist_center.add(CoffeePlaceholder9);
-
-    CoffeePlaceholder10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
-    panel_coffeelist_center.add(CoffeePlaceholder10);
-
-    CoffeePlaceholder11.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
-    panel_coffeelist_center.add(CoffeePlaceholder11);
-
-    CoffeePlaceholder12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
-    panel_coffeelist_center.add(CoffeePlaceholder12);
-
-    CoffeePlaceholder13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
-    panel_coffeelist_center.add(CoffeePlaceholder13);
-
-    CoffeePlaceholder14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
-    panel_coffeelist_center.add(CoffeePlaceholder14);
-
-    CoffeePlaceholder15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
-    panel_coffeelist_center.add(CoffeePlaceholder15);
-
-    CoffeePlaceholder16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
-    panel_coffeelist_center.add(CoffeePlaceholder16);
-
-    CoffeePlaceholder17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
-    panel_coffeelist_center.add(CoffeePlaceholder17);
-
-    CoffeePlaceholder18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
-    panel_coffeelist_center.add(CoffeePlaceholder18);
-
-    CoffeePlaceholder19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
-    panel_coffeelist_center.add(CoffeePlaceholder19);
-
-    CoffeePlaceholder20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
-    panel_coffeelist_center.add(CoffeePlaceholder20);
-
-    CoffeePlaceholder21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
-    panel_coffeelist_center.add(CoffeePlaceholder21);
-
-    CoffeePlaceholder22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
-    panel_coffeelist_center.add(CoffeePlaceholder22);
-
-    CoffeePlaceholder23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
-    panel_coffeelist_center.add(CoffeePlaceholder23);
-
-    CoffeePlaceholder24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
-    panel_coffeelist_center.add(CoffeePlaceholder24);
-
-    CoffeePlaceholder25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
-    panel_coffeelist_center.add(CoffeePlaceholder25);
-
-    CoffeePlaceholder26.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
-    panel_coffeelist_center.add(CoffeePlaceholder26);
-
-    CoffeePlaceholder27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/coffee.png"))); // NOI18N
-    panel_coffeelist_center.add(CoffeePlaceholder27);
+    panel_coffeelist_center.add(jPanel1);
 
     panel_coffeeList.add(panel_coffeelist_center, java.awt.BorderLayout.CENTER);
 
@@ -444,36 +358,13 @@ register_backToLoginButton.addActionListener(new java.awt.event.ActionListener()
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel CoffeePlaceholder;
-    private javax.swing.JLabel CoffeePlaceholder1;
-    private javax.swing.JLabel CoffeePlaceholder10;
-    private javax.swing.JLabel CoffeePlaceholder11;
-    private javax.swing.JLabel CoffeePlaceholder12;
-    private javax.swing.JLabel CoffeePlaceholder13;
-    private javax.swing.JLabel CoffeePlaceholder14;
-    private javax.swing.JLabel CoffeePlaceholder15;
-    private javax.swing.JLabel CoffeePlaceholder16;
-    private javax.swing.JLabel CoffeePlaceholder17;
-    private javax.swing.JLabel CoffeePlaceholder18;
-    private javax.swing.JLabel CoffeePlaceholder19;
-    private javax.swing.JLabel CoffeePlaceholder2;
-    private javax.swing.JLabel CoffeePlaceholder20;
-    private javax.swing.JLabel CoffeePlaceholder21;
-    private javax.swing.JLabel CoffeePlaceholder22;
-    private javax.swing.JLabel CoffeePlaceholder23;
-    private javax.swing.JLabel CoffeePlaceholder24;
-    private javax.swing.JLabel CoffeePlaceholder25;
-    private javax.swing.JLabel CoffeePlaceholder26;
-    private javax.swing.JLabel CoffeePlaceholder27;
-    private javax.swing.JLabel CoffeePlaceholder3;
-    private javax.swing.JLabel CoffeePlaceholder4;
-    private javax.swing.JLabel CoffeePlaceholder5;
-    private javax.swing.JLabel CoffeePlaceholder6;
-    private javax.swing.JLabel CoffeePlaceholder7;
-    private javax.swing.JLabel CoffeePlaceholder8;
-    private javax.swing.JLabel CoffeePlaceholder9;
     private javax.swing.JLabel coffeelist_coffeelisLabel;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JButton login_createAccountButton;
     private javax.swing.JButton login_forgotPasswordButton;
     private javax.swing.JButton login_loginButton;

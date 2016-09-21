@@ -22,6 +22,7 @@ public class JPanelBackground extends JPanel {
     Image image;
 
     public JPanelBackground(String path) {
+        System.out.println(getClass().getResourceAsStream(path));
         try {
             image = ImageIO.read(getClass().getResourceAsStream(path));
         } catch (IOException ex) {
