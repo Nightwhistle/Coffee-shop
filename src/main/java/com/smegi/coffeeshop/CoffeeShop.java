@@ -7,6 +7,10 @@ package com.smegi.coffeeshop;
 
 import java.awt.CardLayout;
 import java.awt.Color;
+import java.io.File;
+import java.net.URISyntaxException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.BorderFactory;
 import javax.swing.border.CompoundBorder;
 
@@ -34,7 +38,7 @@ public class CoffeeShop extends javax.swing.JFrame {
         java.awt.GridBagConstraints gridBagConstraints;
 
         panel_main = new javax.swing.JPanel();
-        javax.swing.JPanel panel_login = new JPanelBackground("/background.jpg");
+        javax.swing.JPanel panel_login = new JPanelBackground("/backgrounds/background.jpg");
         login_loginWithLabel = new javax.swing.JLabel();
         panel_login_container = new javax.swing.JPanel();
         login_usernameField = new javax.swing.JTextField();
@@ -50,7 +54,7 @@ public class CoffeeShop extends javax.swing.JFrame {
         register_emailField = new javax.swing.JTextField();
         register_registerButton = new javax.swing.JButton();
         register_backToLoginButton = new javax.swing.JButton();
-        panel_coffeeList = new javax.swing.JPanel();
+        panel_coffeeList = new JPanelBackground("/backgrounds/bgr.jpg");
         jButton1 = new javax.swing.JButton();
         panel_coffeelist_left = new javax.swing.JPanel();
         coffeelist_coffeelisLabel = new javax.swing.JLabel();
@@ -205,6 +209,7 @@ register_backToLoginButton.addActionListener(new java.awt.event.ActionListener()
 
     panel_main.add(panel_register, "card_register");
 
+    panel_coffeeList.setOpaque(false);
     panel_coffeeList.setLayout(new java.awt.BorderLayout());
 
     jButton1.setText("< login");
@@ -214,6 +219,8 @@ register_backToLoginButton.addActionListener(new java.awt.event.ActionListener()
         }
     });
     panel_coffeeList.add(jButton1, java.awt.BorderLayout.NORTH);
+
+    panel_coffeelist_left.setOpaque(false);
 
     coffeelist_coffeelisLabel.setText("Coffee List");
 
@@ -236,8 +243,10 @@ register_backToLoginButton.addActionListener(new java.awt.event.ActionListener()
 
     panel_coffeeList.add(panel_coffeelist_left, java.awt.BorderLayout.WEST);
 
+    panel_coffeelist_center.setOpaque(false);
     panel_coffeelist_center.setLayout(new java.awt.GridLayout(7, 1, 5, 5));
 
+    jPanel1.setOpaque(false);
     jPanel1.setLayout(new java.awt.GridBagLayout());
 
     jButton2.setText("jButton2");
@@ -347,8 +356,7 @@ register_backToLoginButton.addActionListener(new java.awt.event.ActionListener()
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(CoffeeShop.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-
+        
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {

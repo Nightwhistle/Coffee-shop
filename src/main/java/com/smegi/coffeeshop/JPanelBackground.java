@@ -7,7 +7,9 @@ package com.smegi.coffeeshop;
 
 import java.awt.Graphics;
 import java.awt.Image;
+import java.io.File;
 import java.io.IOException;
+import java.net.URISyntaxException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.imageio.ImageIO;
@@ -15,17 +17,18 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Pakijaner
+ * @author Sergej
  */
 public class JPanelBackground extends JPanel {
 
-    Image image;
+    private Image image;
 
     public JPanelBackground(String path) {
-        System.out.println(getClass().getResourceAsStream(path));
+
         try {
-            image = ImageIO.read(getClass().getResourceAsStream(path));
-        } catch (IOException ex) {
+            File file = new File(CoffeeShop.class.getResource(path).toURI());
+            image = ImageIO.read(file);
+        } catch (IOException | URISyntaxException ex) {
             Logger.getLogger(JPanelBackground.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
@@ -33,6 +36,6 @@ public class JPanelBackground extends JPanel {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        g.drawImage(image, 0, 0, null);
+        g.drawImage(image, 0, 0, this.getWidth(), this.getHeight(), null);
     }
 }
