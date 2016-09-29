@@ -47,7 +47,7 @@ public class CoffeeShop extends javax.swing.JFrame {
         panel_login_container_register = new javax.swing.JPanel();
         login_createAccountButton = new javax.swing.JButton();
         login_forgotPasswordButton = new javax.swing.JButton();
-        panel_register = new javax.swing.JPanel();
+        panel_register = new JPanelBackground("/backgrounds/coffeebackground.jpg");
         panel_register_container = new javax.swing.JPanel();
         register_usernameField = new javax.swing.JTextField();
         register_passwordField = new javax.swing.JTextField();
@@ -59,11 +59,41 @@ public class CoffeeShop extends javax.swing.JFrame {
         panel_coffeelist_left = new javax.swing.JPanel();
         coffeelist_coffeelisLabel = new javax.swing.JLabel();
         panel_coffeelist_center = new javax.swing.JPanel();
-        jPanel1 = new javax.swing.JPanel();
+        panel_header = new javax.swing.JPanel();
+        filler3 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(32767, 0));
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        panel_row1 = new javax.swing.JPanel();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
+        panel_row2 = new javax.swing.JPanel();
+        jButton6 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
+        jButton8 = new javax.swing.JButton();
+        jButton9 = new javax.swing.JButton();
+        panel_row3 = new javax.swing.JPanel();
+        jButton10 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
+        jButton12 = new javax.swing.JButton();
+        jButton13 = new javax.swing.JButton();
+        panel_row4 = new javax.swing.JPanel();
+        jButton14 = new javax.swing.JButton();
+        jButton15 = new javax.swing.JButton();
+        jButton16 = new javax.swing.JButton();
+        jButton17 = new javax.swing.JButton();
+        panel_row5 = new javax.swing.JPanel();
+        jButton18 = new javax.swing.JButton();
+        jButton19 = new javax.swing.JButton();
+        jButton20 = new javax.swing.JButton();
+        jButton21 = new javax.swing.JButton();
+        panel_row6 = new javax.swing.JPanel();
+        jButton22 = new javax.swing.JButton();
+        jButton23 = new javax.swing.JButton();
+        jButton24 = new javax.swing.JButton();
+        jButton25 = new javax.swing.JButton();
         panel_orderReview = new javax.swing.JPanel();
         panel_rate = new javax.swing.JPanel();
 
@@ -94,7 +124,7 @@ public class CoffeeShop extends javax.swing.JFrame {
         login_usernameField.setMargin(new java.awt.Insets(0, 20, 0, 20));
         login_usernameField.setMinimumSize(new java.awt.Dimension(40, 24));
         login_usernameField.setOpaque(false);
-        login_usernameField.setPreferredSize(new java.awt.Dimension(88, 40));
+        login_usernameField.setPreferredSize(new java.awt.Dimension(40, 40));
         panel_login_container.add(login_usernameField);
 
         login_passwordField.setBackground(new Color(0,0,0,0));
@@ -105,6 +135,7 @@ public class CoffeeShop extends javax.swing.JFrame {
         login_passwordField.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
         login_passwordField.setMargin(new java.awt.Insets(0, 20, 0, 20));
         login_passwordField.setOpaque(false);
+        login_passwordField.setPreferredSize(new java.awt.Dimension(40, 19));
         panel_login_container.add(login_passwordField);
 
         login_loginButton.setBackground(new java.awt.Color(255, 255, 255));
@@ -152,34 +183,39 @@ public class CoffeeShop extends javax.swing.JFrame {
 
     panel_register.setLayout(new java.awt.BorderLayout());
 
+    panel_register_container.setBorder(javax.swing.BorderFactory.createEmptyBorder(20, 100, 200, 100));
+    panel_register_container.setOpaque(false);
     panel_register_container.setLayout(new java.awt.GridLayout(4, 0, 0, 5));
 
-    register_usernameField.setBackground(new java.awt.Color(240, 240, 240));
+    register_usernameField.setBackground(new Color(0,0,0,0));
     register_usernameField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
     register_usernameField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
     register_usernameField.setText("Username");
     register_usernameField.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
     register_usernameField.setMargin(new java.awt.Insets(0, 20, 0, 20));
     register_usernameField.setMinimumSize(new java.awt.Dimension(300, 24));
+    register_usernameField.setOpaque(false);
     register_usernameField.setPreferredSize(new java.awt.Dimension(88, 40));
     panel_register_container.add(register_usernameField);
 
-    register_passwordField.setBackground(new java.awt.Color(240, 240, 240));
+    register_passwordField.setBackground(new Color(0,0,0,0));
     register_passwordField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
     register_passwordField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
     register_passwordField.setText("Password");
     register_passwordField.setToolTipText("");
     register_passwordField.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
     register_passwordField.setMargin(new java.awt.Insets(0, 20, 0, 20));
+    register_passwordField.setOpaque(false);
     panel_register_container.add(register_passwordField);
 
-    register_emailField.setBackground(new java.awt.Color(240, 240, 240));
+    register_emailField.setBackground(new Color(0,0,0,0));
     register_emailField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
     register_emailField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
     register_emailField.setText("Email");
     register_emailField.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 2, 0, new java.awt.Color(0, 0, 0)));
     register_emailField.setMargin(new java.awt.Insets(0, 20, 0, 20));
     register_emailField.setMinimumSize(new java.awt.Dimension(40, 24));
+    register_emailField.setOpaque(false);
     register_emailField.setPreferredSize(new java.awt.Dimension(88, 40));
     panel_register_container.add(register_emailField);
 
@@ -195,7 +231,7 @@ register_registerButton.setMargin(new java.awt.Insets(20, 20, 20, 20));
 register_registerButton.setPreferredSize(new java.awt.Dimension(29, 10));
 panel_register_container.add(register_registerButton);
 
-panel_register.add(panel_register_container, java.awt.BorderLayout.EAST);
+panel_register.add(panel_register_container, java.awt.BorderLayout.SOUTH);
 
 register_backToLoginButton.setText("< Login");
 register_backToLoginButton.setBorderPainted(false);
@@ -243,29 +279,228 @@ register_backToLoginButton.addActionListener(new java.awt.event.ActionListener()
 
     panel_coffeeList.add(panel_coffeelist_left, java.awt.BorderLayout.WEST);
 
+    panel_coffeelist_center.setBorder(javax.swing.BorderFactory.createEmptyBorder(50, 50, 50, 50));
     panel_coffeelist_center.setOpaque(false);
     panel_coffeelist_center.setLayout(new java.awt.GridLayout(7, 1, 5, 5));
 
-    jPanel1.setOpaque(false);
-    jPanel1.setLayout(new java.awt.GridBagLayout());
-
-    jButton2.setText("jButton2");
+    panel_header.setLayout(new java.awt.GridBagLayout());
     gridBagConstraints = new java.awt.GridBagConstraints();
     gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
     gridBagConstraints.weightx = 1.0;
     gridBagConstraints.weighty = 1.0;
-    jPanel1.add(jButton2, gridBagConstraints);
+    panel_header.add(filler3, gridBagConstraints);
+
+    jLabel1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+    jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+    jLabel1.setText("Small");
+    jLabel1.setMaximumSize(new java.awt.Dimension(73, 23));
+    jLabel1.setMinimumSize(new java.awt.Dimension(73, 23));
+    jLabel1.setPreferredSize(new java.awt.Dimension(73, 23));
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.anchor = java.awt.GridBagConstraints.SOUTH;
+    panel_header.add(jLabel1, gridBagConstraints);
+
+    jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+    jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+    jLabel2.setText("Medium");
+    jLabel2.setMaximumSize(new java.awt.Dimension(73, 23));
+    jLabel2.setMinimumSize(new java.awt.Dimension(73, 23));
+    jLabel2.setPreferredSize(new java.awt.Dimension(73, 23));
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.anchor = java.awt.GridBagConstraints.SOUTH;
+    panel_header.add(jLabel2, gridBagConstraints);
+
+    jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+    jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+    jLabel3.setText("Large");
+    jLabel3.setMaximumSize(new java.awt.Dimension(73, 23));
+    jLabel3.setMinimumSize(new java.awt.Dimension(73, 23));
+    jLabel3.setPreferredSize(new java.awt.Dimension(73, 23));
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.anchor = java.awt.GridBagConstraints.SOUTH;
+    panel_header.add(jLabel3, gridBagConstraints);
+
+    panel_coffeelist_center.add(panel_header);
+
+    panel_row1.setOpaque(false);
+    panel_row1.setLayout(new java.awt.GridBagLayout());
+
+    jButton2.setText("jButton2");
+    jButton2.setMaximumSize(new java.awt.Dimension(50, 50));
+    jButton2.setMinimumSize(new java.awt.Dimension(50, 50));
+    jButton2.setPreferredSize(new java.awt.Dimension(50, 50));
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    gridBagConstraints.weightx = 1.0;
+    gridBagConstraints.weighty = 1.0;
+    panel_row1.add(jButton2, gridBagConstraints);
 
     jButton3.setText("jButton2");
-    jPanel1.add(jButton3, new java.awt.GridBagConstraints());
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    panel_row1.add(jButton3, gridBagConstraints);
 
     jButton4.setText("jButton2");
-    jPanel1.add(jButton4, new java.awt.GridBagConstraints());
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    panel_row1.add(jButton4, gridBagConstraints);
 
     jButton5.setText("jButton2");
-    jPanel1.add(jButton5, new java.awt.GridBagConstraints());
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    panel_row1.add(jButton5, gridBagConstraints);
 
-    panel_coffeelist_center.add(jPanel1);
+    panel_coffeelist_center.add(panel_row1);
+
+    panel_row2.setOpaque(false);
+    panel_row2.setLayout(new java.awt.GridBagLayout());
+
+    jButton6.setText("jButton2");
+    jButton6.setMaximumSize(new java.awt.Dimension(50, 50));
+    jButton6.setMinimumSize(new java.awt.Dimension(50, 50));
+    jButton6.setPreferredSize(new java.awt.Dimension(50, 50));
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    gridBagConstraints.weightx = 1.0;
+    gridBagConstraints.weighty = 1.0;
+    panel_row2.add(jButton6, gridBagConstraints);
+
+    jButton7.setText("jButton2");
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    panel_row2.add(jButton7, gridBagConstraints);
+
+    jButton8.setText("jButton2");
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    panel_row2.add(jButton8, gridBagConstraints);
+
+    jButton9.setText("jButton2");
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    panel_row2.add(jButton9, gridBagConstraints);
+
+    panel_coffeelist_center.add(panel_row2);
+
+    panel_row3.setOpaque(false);
+    panel_row3.setLayout(new java.awt.GridBagLayout());
+
+    jButton10.setText("jButton2");
+    jButton10.setMaximumSize(new java.awt.Dimension(50, 50));
+    jButton10.setMinimumSize(new java.awt.Dimension(50, 50));
+    jButton10.setPreferredSize(new java.awt.Dimension(50, 50));
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    gridBagConstraints.weightx = 1.0;
+    gridBagConstraints.weighty = 1.0;
+    panel_row3.add(jButton10, gridBagConstraints);
+
+    jButton11.setText("jButton2");
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    panel_row3.add(jButton11, gridBagConstraints);
+
+    jButton12.setText("jButton2");
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    panel_row3.add(jButton12, gridBagConstraints);
+
+    jButton13.setText("jButton2");
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    panel_row3.add(jButton13, gridBagConstraints);
+
+    panel_coffeelist_center.add(panel_row3);
+
+    panel_row4.setOpaque(false);
+    panel_row4.setLayout(new java.awt.GridBagLayout());
+
+    jButton14.setText("jButton2");
+    jButton14.setMaximumSize(new java.awt.Dimension(50, 50));
+    jButton14.setMinimumSize(new java.awt.Dimension(50, 50));
+    jButton14.setPreferredSize(new java.awt.Dimension(50, 50));
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    gridBagConstraints.weightx = 1.0;
+    gridBagConstraints.weighty = 1.0;
+    panel_row4.add(jButton14, gridBagConstraints);
+
+    jButton15.setText("jButton2");
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    panel_row4.add(jButton15, gridBagConstraints);
+
+    jButton16.setText("jButton2");
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    panel_row4.add(jButton16, gridBagConstraints);
+
+    jButton17.setText("jButton2");
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    panel_row4.add(jButton17, gridBagConstraints);
+
+    panel_coffeelist_center.add(panel_row4);
+
+    panel_row5.setOpaque(false);
+    panel_row5.setLayout(new java.awt.GridBagLayout());
+
+    jButton18.setText("jButton2");
+    jButton18.setMaximumSize(new java.awt.Dimension(50, 50));
+    jButton18.setMinimumSize(new java.awt.Dimension(50, 50));
+    jButton18.setPreferredSize(new java.awt.Dimension(50, 50));
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    gridBagConstraints.weightx = 1.0;
+    gridBagConstraints.weighty = 1.0;
+    panel_row5.add(jButton18, gridBagConstraints);
+
+    jButton19.setText("jButton2");
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    panel_row5.add(jButton19, gridBagConstraints);
+
+    jButton20.setText("jButton2");
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    panel_row5.add(jButton20, gridBagConstraints);
+
+    jButton21.setText("jButton2");
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    panel_row5.add(jButton21, gridBagConstraints);
+
+    panel_coffeelist_center.add(panel_row5);
+
+    panel_row6.setOpaque(false);
+    panel_row6.setLayout(new java.awt.GridBagLayout());
+
+    jButton22.setText("jButton2");
+    jButton22.setMaximumSize(new java.awt.Dimension(50, 50));
+    jButton22.setMinimumSize(new java.awt.Dimension(50, 50));
+    jButton22.setPreferredSize(new java.awt.Dimension(50, 50));
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    gridBagConstraints.weightx = 1.0;
+    gridBagConstraints.weighty = 1.0;
+    panel_row6.add(jButton22, gridBagConstraints);
+
+    jButton23.setText("jButton2");
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    panel_row6.add(jButton23, gridBagConstraints);
+
+    jButton24.setText("jButton2");
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    panel_row6.add(jButton24, gridBagConstraints);
+
+    jButton25.setText("jButton2");
+    gridBagConstraints = new java.awt.GridBagConstraints();
+    gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+    panel_row6.add(jButton25, gridBagConstraints);
+
+    panel_coffeelist_center.add(panel_row6);
 
     panel_coffeeList.add(panel_coffeelist_center, java.awt.BorderLayout.CENTER);
 
@@ -367,12 +602,35 @@ register_backToLoginButton.addActionListener(new java.awt.event.ActionListener()
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel coffeelist_coffeelisLabel;
+    private javax.swing.Box.Filler filler3;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton10;
+    private javax.swing.JButton jButton11;
+    private javax.swing.JButton jButton12;
+    private javax.swing.JButton jButton13;
+    private javax.swing.JButton jButton14;
+    private javax.swing.JButton jButton15;
+    private javax.swing.JButton jButton16;
+    private javax.swing.JButton jButton17;
+    private javax.swing.JButton jButton18;
+    private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton20;
+    private javax.swing.JButton jButton21;
+    private javax.swing.JButton jButton22;
+    private javax.swing.JButton jButton23;
+    private javax.swing.JButton jButton24;
+    private javax.swing.JButton jButton25;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton9;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JButton login_createAccountButton;
     private javax.swing.JButton login_forgotPasswordButton;
     private javax.swing.JButton login_loginButton;
@@ -382,6 +640,7 @@ register_backToLoginButton.addActionListener(new java.awt.event.ActionListener()
     private javax.swing.JPanel panel_coffeeList;
     private javax.swing.JPanel panel_coffeelist_center;
     private javax.swing.JPanel panel_coffeelist_left;
+    private javax.swing.JPanel panel_header;
     private javax.swing.JPanel panel_login_container;
     private javax.swing.JPanel panel_login_container_register;
     private javax.swing.JPanel panel_main;
@@ -389,6 +648,12 @@ register_backToLoginButton.addActionListener(new java.awt.event.ActionListener()
     private javax.swing.JPanel panel_rate;
     private javax.swing.JPanel panel_register;
     private javax.swing.JPanel panel_register_container;
+    private javax.swing.JPanel panel_row1;
+    private javax.swing.JPanel panel_row2;
+    private javax.swing.JPanel panel_row3;
+    private javax.swing.JPanel panel_row4;
+    private javax.swing.JPanel panel_row5;
+    private javax.swing.JPanel panel_row6;
     private javax.swing.JButton register_backToLoginButton;
     private javax.swing.JTextField register_emailField;
     private javax.swing.JTextField register_passwordField;
